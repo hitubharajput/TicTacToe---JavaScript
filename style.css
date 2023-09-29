@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Poppins:wght@100&family=Roboto:wght@100&family=Young+Serif&display=swap');
+
+*{
+    color: white;
+    font-family: 'Play',sans-serif;
+    transition: 0.1s ease-in-out;
+}
+
+
+body{
+    background : linear-gradient(45deg,#04619F ,#000000);
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    width: 100vw;
+    text-align:center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.turnContainer{
+    width: 177px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.turnContainer h3{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.turnContainer .turnBox{
+      border: 3px solid #000;
+      font-size: 1.6rem;
+      font-weight: 700;
+}
+
+.turnContainer .turnBox:nth-child(even) {
+    border-right:none ;
+}
+
+
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 87px;
+    height: 40px;
+    background-color: #17e225;
+    z-index: -1;
+
+
+}
+
+
+.mainGrid{
+    box-shadow: 0px 3px 15px rgb(2, 2, 2);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #000;
+    position: relative;
+ 
+}
+
+.box{
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+} 
+
+.box:hover{
+    background-color: rgb(130, 3, 16);
+}
+
+#playAgain{
+    background-color: rgb(8, 8, 8);
+    padding: 10px 25px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px; 
+    display: none;
+
+}
+#playAgain:hover{
+    padding: 10px 40px;
+    background-color: #db1515;
+    color: black;
+
+}
+
